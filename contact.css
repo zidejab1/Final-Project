@@ -1,0 +1,61 @@
+/* Styles for the contact form container */
+.contact-form {
+    max-width: 500px; /* Sets the maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
+    border: 1px solid #1d3b25; /* Adds a border around the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 0 10px rgb(142, 214, 148); /* Adds a subtle box-shadow to the container */
+    background-color: #9fe2b6; /* Sets the background color of the container */
+}
+
+/* Styles for the labels of the form fields */
+.contact-form label {
+    display: block; /* Displays the label as a block element */
+    margin-bottom: 10px; /* Adds space below each label */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+/* Styles for the input fields and textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    display: block; /* Displays the form field as a block element */
+    width: 100%; /* Makes the form field 100% width of its container */
+    padding: 10px; /* Adds padding inside the form field */
+    margin-bottom: 20px; /* Adds space below each form field */
+    border-radius: 5px; /* Rounds the corners of the form field */
+    border: 1px solid #ccc; /* Adds a border around the form field */
+    box-sizing: border-box; /* Makes sure the border and padding are included in the width */
+}
+
+/* Styles for radio buttons and their labels */
+.contact-form input[type="radio"] + label {
+    margin-right: 20px; /* Adds space to the right of the label */
+}
+
+/* Styles for the textarea */
+.contact-form textarea {
+    resize: vertical; /* Allows the textarea to be resized vertically only */
+    min-height: 150px; /* Sets the minimum height of the textarea */
+}
+
+/* Styles for the submit button */
+.contact-form input[type="submit"] {
+    display: block; /* Displays the submit button as a block element */
+    width: 100%; /* Makes the submit button 100% width of its container */
+    padding: 10px; /* Adds padding inside the submit button */
+    border-radius: 5px; /* Rounds the corners of the submit button */
+    border: none; /* Removes the border of the submit button */
+    background-color: #007bff; /* Sets the background color of the submit button */
+    color: #fff; /* Sets the text color of the submit button */
+    font-size: 1.2em; /* Sets the font size of the submit button */
+    text-transform: uppercase; /* Makes the text of the submit button uppercase */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the submit button */
+}
+
+/* Styles for the submit button when hovered over */
+.contact-form input[type="submit"]:hover {
+    background-color: #0069d9; /* Changes the background color of the submit button on hover */
+}
