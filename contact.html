@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right">
+        <nav>
+            <ul style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <li><a href="index.html">Home/About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="maincontent">
+        <h1 style="text-align: center;">Contact Zideja</h1>
+
+        <h3 id="before" style="text-align: center; color: rgb(184, 124, 208); font-weight: bolder;">Fill out the form below and I will reach out when I can!</h3>
+        <!--
+            Everything below can be changed CSS wise in the contact.css file.
+        -->
+            <div class="contact-form">
+                <!-- 
+                    If I ever decided to add Form handling I would use PHP in the action slot 
+                -->
+                <form action="" method="post" id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+
+            
+                    
+                    <label for="message">Comments? Questions? Concerns?:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <script>
+                function handleFormSubmit(event) {
+                    event.preventDefault(); // prevent the default form submission behavior
+            
+                    // get the user's name from the form input with id "name"
+                    const nameInput = document.querySelector('#name');
+                    const name = nameInput.value;
+            
+                    // replace the form with the thank you message
+                    const contactForm = document.querySelector('#contact-form');
+                    contactForm.innerHTML = `<p>Thank you ${name}, I will be in contact with you soon.</p>`;
+                }
+            
+                const form = document.querySelector('#contact-form');
+                form.addEventListener('submit', handleFormSubmit);
+            </script>
+
+    </div>
+</body>
+</html>
