@@ -1,0 +1,1 @@
+### In this website, the home page is an about me that includes photos a bit of my history. In the Contact page there is a form to be filled out that has name, email,and phone number and a place for the viewers to add their comments questions and concerns
